@@ -70,6 +70,7 @@ namespace QQRobot.MahuaUI
                 {
                     ConfigCache.configInfosBind.Add(configInfo);
                 }
+                ConfigCache.saveConfigToFile();
                 this.Close();
             }
             

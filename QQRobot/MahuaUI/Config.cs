@@ -42,6 +42,7 @@ namespace QQRobot.MahuaUI
                 }else if (column is DataGridViewButtonColumn && column.Name == "delete")
                 {
                     ConfigCache.configInfosBind.RemoveAt(e.RowIndex);
+                    ConfigCache.saveConfigToFile();
                 }
             }
         }

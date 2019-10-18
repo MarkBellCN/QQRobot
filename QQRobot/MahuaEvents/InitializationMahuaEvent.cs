@@ -27,16 +27,7 @@ namespace QQRobot.MahuaEvents
 
         public void Initialized(InitializedContext context)
         {
-            StreamReader file = File.OpenText(ConfigCache.configFilePath);
-            if (null != file)
-            {
-                string json = file.ReadToEnd();
-                IList<ConfigInfo> items = JsonConvert.DeserializeObject<List<ConfigInfo>>(json);
-                for (int i = 0; i < items.Count; i++)
-                {
-                    ConfigCache.configInfosBind.Add(items[i]);
-                }
-            }
+            ConfigCache.loadConfigByFile();
         }
     }
 }
