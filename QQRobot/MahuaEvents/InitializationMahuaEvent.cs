@@ -27,7 +27,7 @@ namespace QQRobot.MahuaEvents
 
         public void Initialized(InitializedContext context)
         {
-            ConfigCache.loadConfigByFile();
+            
         }
     }
 }

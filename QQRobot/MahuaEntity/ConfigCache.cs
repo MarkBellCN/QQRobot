@@ -20,6 +20,11 @@ namespace QQRobot.MahuaEntity
 
         public static BindingList<ConfigInfo> configInfosBind = new BindingList<ConfigInfo>(configInfos);
 
+        static ConfigCache()
+        {
+            ConfigCache.loadConfigByFile();
+        }
+
         public static IList<ConfigInfo> GetConfigInfoByGroupId(string groupId)
         {
             return configInfos;

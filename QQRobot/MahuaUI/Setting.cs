@@ -12,7 +12,7 @@ namespace QQRobot.MahuaUI
     {
         public void Show(ILifetimeScope lifetimeScope)
         {
-            ConfigCache.loadConfigByFile();
+            //ConfigCache.loadConfigByFile();
             Config config = new Config();
             config.Show();
         }

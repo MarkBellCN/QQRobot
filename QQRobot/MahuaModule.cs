@@ -51,8 +51,6 @@ namespace QQRobot
                    .As<IInitializationMahuaEvent>();
                 builder.RegisterType<GroupMessageReceivedMahuaEvent>()
                     .As<IGroupMessageReceivedMahuaEvent>();
-                builder.RegisterType<PlatfromExitedMahuaEvent>()
-                    .As<IPlatformExitedMahuaEvent>();
                 
             }
         }
